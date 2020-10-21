@@ -45,4 +45,4 @@ client.on('message', message => {
     } 
 });
 
-client.login('NzY1MjkwMTIwODk5MTk5MDE2.X4Sp9w.AerpHyTcYVUqrHIoHjzoIe75Rog');
+client.login(process.env.token);
