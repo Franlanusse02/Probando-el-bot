@@ -30,8 +30,8 @@ client.on('message', message => {
        client.commands.get('ping').execute(message, args);
     } else if(command === 'invitacion'){
         client.commands.get('invitacion').execute(message, args);
-    } else if(command === 'ayuda'){
-        client.commands.get('ayuda').execute(message, args);
+    } else if(command === 'help'){
+        client.commands.get('help').execute(message, args);
     } else if(command === 'kick'){
         client.commands.get('kick').execute(message, args);
     } else if(command === 'agree'){
@@ -42,7 +42,9 @@ client.on('message', message => {
         client.commands.get('unmute').execute(message, args);
     } else if(command === 'ban'){
         client.commands.get('ban').execute(message, args);
-    } 
+    } else if(command === 'ultraping'){
+        client.commands.get('ultraping').execute(message, args);
+    }
 });
 
 client.login(process.env.token);
